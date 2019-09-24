@@ -6,7 +6,7 @@
 int main() {
      int pagamento_op,op;
      float preco;
-     char dia[50] = "";
+     char dia;
      char pagamento;
 
 
@@ -17,7 +17,7 @@ int main() {
           case 1:
           dia = "seg";
           break;
-/*
+
           case 2:
           dia = "ter";
           break;
@@ -45,7 +45,7 @@ int main() {
           default:
           op = 0;
           break;
-          */
+          
      }
     
      printf("Digite preco do produto em reais:\n");
@@ -57,7 +57,7 @@ int main() {
           case 1:
           printf( "ouro");
           break;
-/*
+
           case 2:
           pagamento = "prata";
           break;
@@ -65,7 +65,7 @@ int main() {
           default:
           pagamento_op = 0;
           break; 
-  */   }
+     }
     
 
      if( op  == 1 || op == 2 || op == 3  && pagamento_op == 1){
