@@ -5,16 +5,13 @@
 
 int main() {
    
-   float altura , raio , volume, area , areaB, areaL;
+   float altura , raio , volume, area;
 
    scanf("%f",&altura);
    scanf("%f",&raio);
 
-   areaB = 3.14*pow(raio,2);
-   areaL = 2*3.14*raio*altura;
-
-   volume =areaB*altura;
-   area = 2*areaB+areaL;
+   volume = 3.14 * pow(raio,2.0) * altura;
+   area = (2.0 * 3.14 * raio * altura) + (2 * 3.14 * pow(raio,2.0));
 
    
    printf("%.2f\n",volume);
